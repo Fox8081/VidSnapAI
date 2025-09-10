@@ -1,0 +1,4 @@
+user_uploads/
+done.txt
+*.pyc
+__pycache__/
