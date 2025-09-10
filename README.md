@@ -22,18 +22,24 @@ Wait for processing; visit the gallery to view your finished reels.
 Project Structure:
 
  main.py             -  Flask web server: uploads, routing, gallery
+ 
  generate_process.py -  Background worker: processes new uploads to reels
+ 
  text_to_audio.py    -  Converts text to speech with ElevenLabs API
+ 
  config.py           -  Stores API key(s) (not shown)
+ 
  user_uploads/       -  Uploaded user files (created at runtime)
+ 
  static/reels/       -  Outputted reel videos
+ 
  templates/          -  HTML templates (index.html, create.html, gallery.html)
  
 Installation and Setup
 Clone the repository:
 
 bash
-git clone https://github.com/yourusername/reel-generator.git
+git clone https://github.com/Fox8081/VidSnapAI.git
 cd reel-generator
 Install dependencies:
 
@@ -92,9 +98,13 @@ elevenlabs
 
 File Explanations
 File	Role
+
 main.py:	            Web server, routes for upload and gallery
+
 generate_process.py:	Watches for new uploads, processes them to create reels
-text_to_audio.py:	    Text-to-speech conversion using ElevenLabs API
+
+text_to_audio.py:	   Text-to-speech conversion using ElevenLabs API
+
 config.py:	          API key configuration (must add ELEVENLABS_API_KEY)
 
 Notes and Troubleshooting
