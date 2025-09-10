@@ -40,7 +40,9 @@ Clone the repository:
 
 bash
 git clone https://github.com/Fox8081/VidSnapAI.git
-cd reel-generator
+
+cd VidSnapAI
+
 Install dependencies:
 
 bash
