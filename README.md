@@ -79,6 +79,7 @@ Submit; allow a few seconds for video generation.
 Visit the “Gallery” page to view all reels created so far.
 
 How it Works
+
 main.py: Handles image uploads, saves description and input file list, and serves UI pages.
 
 generate_process.py: Loops through uploads, converts description text to audio.mp3 using ElevenLabs, then calls ffmpeg to generate a vertical reel video; writes to static/reels.
